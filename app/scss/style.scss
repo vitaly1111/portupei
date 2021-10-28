@@ -1,0 +1,43 @@
+@import "fonts";
+@import "vars";
+@import "global";
+
+.header {
+	min-height: 660px !important;
+	height: 100%;
+	
+	&__top {
+		&-inner {
+			padding: 10px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	&__menu {
+		&-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&-item {
+			font-size: 16px;
+			line-height: 20px;
+			text-transform: uppercase;
+			& + .header__menu-item {
+				margin-left: 28px;
+			}
+		}
+	}
+	&__hero {
+		display: flex;
+		flex-direction: column;
+		min-height: 592px;
+		background-image: url("../images/bg.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+}
+
+@import "media";
