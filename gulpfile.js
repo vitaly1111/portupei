@@ -24,7 +24,9 @@ autoprefixer=require('gulp-autoprefixer');
 
 function styles() {
 	return src(['app/scss/**/*.scss',
-		'app/vendor/normalize/normalize.css'])
+		'app/vendor/normalize/normalize.css',
+		'node_modules/swiper/swiper.min.css'
+	])
 		.pipe(sourcemaps.init())
 		.pipe(scss(
 			{
