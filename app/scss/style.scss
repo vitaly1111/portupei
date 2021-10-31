@@ -130,4 +130,16 @@
 	}
 }
 
+.slider{
+	&__wrapper{
+		height: 320px;
+	}
+}
+
+.swiper {
+  width: auto;
+  height: 300px;
+}
+
+
 @import "media";
