@@ -25,10 +25,11 @@
 							class="header__logo"></a>
 					<nav class="header__menu">
 						<ul class="header__menu-list">
-							<li class="header__menu-item"><a href="#" class="header__menu-link">Каталог</a></li>
+							<li class="header__menu-item"><a href="#catalog" class="header__menu-link">Каталог</a></li>
 							<li class="header__menu-item"><a href="#" class="header__menu-link">Преимущества</a></li>
 							<li class="header__menu-item"><a href="#" class="header__menu-link">Отзывы</a></li>
-							<li class="header__menu-item"><a href="#" class="header__menu-link">Как заказать</a></li>
+							<li class="header__menu-item"><a href="#howTo" class="header__menu-link">Как заказать</a>
+							</li>
 						</ul>
 					</nav>
 					<button class="header__button">
@@ -52,13 +53,15 @@
 					<p class="hero__price">
 						всего за<span> 2990</span>р.
 					</p>
-					<a href="#" class="hero__button">повседневные портупеи</a>
-					<a href="#" class="hero__button">Эротические портупеи</a>
+				<div class='hero__buttons'>
+						<a href="#catalog" class="hero__button" data-links-handler="casual">повседневные портупеи</a>
+						<a href="#catalog" class="hero__button" data-links-handler="erotic">Эротические портупеи</a>
+				</div>
 				</div>
 			</div>
 		</div>
 	</header>
-	<main class="main">
+	<main class="main ">
 		<setion class="section hit">
 			<div class="container">
 				<h2 class="section__title">
@@ -119,7 +122,7 @@
 				<h2 class="section__title">
 					Таблица размеров
 				</h2>
-				<div class="table__sizes-wrapper">
+		 		<div class="table__sizes-wrapper">
 					<table class="table__sizes">
 
 						<tbody class="sizes__table-body">
@@ -240,28 +243,28 @@
 							</tr>
 						</tbody>
 					</table>
-				</div>
+				</div> 
 			</div>
 		</section>
-		<section class="section catalog">
+		<section class="section catalog" id='catalog'>
 			<div class="container">
 				<h2 class="section__title">
 					Каталог
 				</h2>
 				<div class="tabs">
 					<ul class="tabs__handlers catalog__tabs">
-						<li class="tabs__handler catalog__handler catalog__handler-active">
+						<li class="tabs__handler catalog__handler catalog__handler-active" data-tabs-handler='casual'>
 							пАвседневные портупеи
 						</li>
-						<li class="tabs__handler catalog__handler">
+						<li class="tabs__handler catalog__handler" data-tabs-handler="erotic">
 							эротичесские портупеи
 						</li>
 					</ul>
 					<ul class="tabs__field catalog__field">
-						<li class="tabs__field-item tabs__field-visible">
+						<li class="tabs__field-item tabs__field-visible" data-tabs-field="casual">
 							<ul class="tabs__field-list ">
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_1.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_1.jpg" alt="model" class="catalog__card-img  more more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -293,14 +296,14 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button  class="catalog__card-button  more more">
 											заказать
 										</button>
 									</div>
 								</li>
 
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_2.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_2.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -332,14 +335,14 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_3.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_3.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -371,13 +374,13 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_1.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_1.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -409,14 +412,14 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_2.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_2.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -448,14 +451,14 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_3.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_3.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -487,17 +490,17 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 							</ul>
 						</li>
-						<li class="tabs__field-item ">
+						<li class="tabs__field-item " data-tabs-field="erotic">
 							<ul class="tabs__field-list">
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_1.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_3.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -529,14 +532,14 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_2.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_1.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -568,14 +571,14 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_3.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_2.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -607,13 +610,13 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_1.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_1.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -645,14 +648,14 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_2.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_2.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -684,14 +687,14 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
 								</li>
 
 								<li class="tabs__field-card catalog__card">
-									<img src="./images/cards/card_3.jpg" alt="model" class="catalog__card-img">
+									<img src="./images/cards/card_3.jpg" alt="model" class="catalog__card-img  more">
 									<span class="catalog__card-sale">-53%</span>
 									<div class="catalog__card-info">
 										<h4 class="catalog__card-title">
@@ -723,7 +726,7 @@
 											</span>
 											2990 р.
 										</div>
-										<button class="catalog__card-button">
+										<button class="catalog__card-button  more">
 											заказать
 										</button>
 									</div>
@@ -735,7 +738,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="section order">
+		<section class="section order" id="howTo">
 			<div class="container">
 				<h2 class="section__title">
 					КАК закзать?
@@ -755,7 +758,7 @@
 								<img src="./images/telemarketer.png" alt="manager" class="order__howto-img">
 							</div>
 							<p class="order__howto-description">
-								Менеджр перезвонит для уточнения деталей заказа
+							Менеджр перезвонит для уточнения деталей заказа
 							</p>
 						</li>
 						<li class="order__howto-item">
@@ -763,7 +766,7 @@
 								<img src="./images/package-1.png" alt="pack" class="order__howto-img">
 							</div>
 							<p class="order__howto-description">
-								В блежайшее время отправляем ваш заказ
+							В блежайшее время отправляем ваш заказ
 							</p>
 						</li>
 						<li class="order__howto-item">
@@ -771,7 +774,7 @@
 								<img src="./images/credit-card.png" alt="manager" class="order__howto-img">
 							</div>
 							<p class="order__howto-description">
-								Вы оплачиваете заказ при получении
+							Вы оплачиваете заказ при получении
 							</p>
 						</li>
 					</ul>
@@ -779,12 +782,48 @@
 						<div class="order__underline-line"></div>
 						<div class="order__underline-line"></div>
 						<div class="order__underline-line"></div>
-					
+
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
+	<!-- modal (start) -->
+	<div class="modal hidden">
+		<div class="overlay"></div>
+		<div class="modal-wrapper catalog__card">
+			<img src="./images/cards/card_3.jpg" alt="model"  class="catalog__card-img  more">
+			
+			<div class="catalog__card-info">
+				<h4 class="catalog__card-title">
+					Портупея “Джони Миллер”
+				</h4>
+
+				<div class="catalog__card-price">
+					<span class="old-price">4990 р.
+					</span>
+					2990 р.
+				</div>
+				<button type="button" class="modal__close" aria-label="закрыть модальное окно">
+				</button>
+				<form action="" class="form modal__form">
+					<select name="size" id="size" class="modal__input">
+						<option value="XS">XS</option>
+						<option value="S">S</option>
+					</select>
+					<input type="text" name="name" class="input modal__input" placeholder="Введите ваше">
+					<input type="mail" name="mail" class="input modal__input" placeholder="Электронная почта">
+					
+						<button type="submit" class=" catalog__card-button  more">
+							Оформить заказ
+						</button>
+					
+				</form>
+
+				<!-- /.form modal__form -->
+			</div>
+		</div>
+		<!-- modal (end) -->
 </body>
 
 </html>
